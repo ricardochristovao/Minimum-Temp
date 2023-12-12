@@ -3,7 +3,6 @@
 
 Bem-vindo ao **Minimum Temp**, o template WordPress mais rápido do mundo para Elementor e landing pages! Criado por Ricardo Christovão da Silva (Ricti), este template é a solução ideal para quem busca performance excepcional sem o excesso de recursos desnecessários.
 
-
 ### Características Principais:
 - **🏎️ Alta Performance**: Projetado para carregar rapidamente, garantindo uma experiência de usuário superior.
 - **🛠️ Otimizado para Elementor**: Perfeitamente compatível com o popular construtor de páginas Elementor.
@@ -17,7 +16,7 @@ Bem-vindo ao **Minimum Temp**, o template WordPress mais rápido do mundo para E
 
 ### Baixar o Template:
 Para baixar o template "Minimum Temp", acesse as releases **Release** no nosso repositório e baixe o arquivo ZIP mais recente.
-- [Baixar Minimum Temp](https://github.com/ricardochristovao/Minimum-Temp/releases)
+- [![Baixar Minimum Temp](https://img.shields.io/badge/Baixar-Minimum%20Temp-blue?style=for-the-badge&logo=github)](https://github.com/ricardochristovao/Minimum-Temp/releases)
 
 ### 🌟 Conheça o Criador
 
@@ -31,4 +30,3 @@ Sugestões e contribuições são sempre bem-vindas! Sinta-se à vontade para fa
 
 ### 📜 Licença
 Este projeto está sob a licença MIT. Confira [LICENSE](LICENSE) para mais detalhes.
-
