@@ -22,9 +22,9 @@ Para baixar o template "Minimum Temp", acesse as releases **Release** no nosso r
 ### 🌟 Conheça o Criador
 
 - **Ricardo Christovão da Silva (Ricti)** - Conecte-se comigo!
-  - ![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)(https://www.instagram.com/ricardochristovao/)
-  - ![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)(https://www.linkedin.com/in/ricardochristovao/)
-  - ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)(https://github.com/ricardochristovao)
+  - [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ricardochristovao/)
+  - [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ricardochristovao/)
+  - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ricardochristovao)
 
 ### Contribuições:
 Sugestões e contribuições são sempre bem-vindas! Sinta-se à vontade para fazer um fork do repositório e enviar suas melhorias via pull request.
