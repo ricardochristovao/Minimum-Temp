@@ -17,7 +17,7 @@ Bem-vindo ao **Minimum Temp**, o template WordPress mais rápido do mundo para E
 
 ### Baixar o Template:
 Para baixar o template "Minimum Temp", acesse a pasta **Versões** no nosso repositório e baixe o arquivo ZIP mais recente.
-- [Baixar Minimum Temp](Versões)
+- [Baixar Minimum Temp](releases)
 
 ### 🌟 Conheça o Criador
 
