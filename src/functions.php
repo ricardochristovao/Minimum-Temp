@@ -32,8 +32,13 @@ add_action('after_setup_theme', 'minimun_temp_check_elementor');
 
 // Adiciona o favicon ao cabeçalho do site
 function minimun_temp_add_favicon() {
-    $diretorio_tema = get_stylesheet_directory_uri();
-    echo '<link rel="shortcut icon" href="' . esc_url($diretorio_tema) . '/favi.ico" />';
+    $custom_favicon = get_site_icon_url();
+    if ($custom_favicon) {
+        echo '<link rel="shortcut icon" href="' . esc_url($custom_favicon) . '" />';
+    } else {
+        $diretorio_tema = get_stylesheet_directory_uri();
+        echo '<link rel="shortcut icon" href="' . esc_url($diretorio_tema) . '/favi.ico" />';
+    }
 }
 
 add_action('wp_head', 'minimun_temp_add_favicon');
