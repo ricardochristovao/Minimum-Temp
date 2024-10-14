@@ -3,9 +3,14 @@
 function minimun_temp_setup() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
-    add_theme_support('automatic-feed-links'); // Suporte para links de feed
-    add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption')); // Suporte para HTML5
+    add_theme_support('automatic-feed-links');
+    add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
     add_theme_support('customize-selective-refresh-widgets');
+    
+    // Registra o local do menu
+    register_nav_menus(array(
+        'primary' => __('Primary Menu', 'minimun-temp'),
+    ));
 }
 
 add_action('after_setup_theme', 'minimun_temp_setup');
