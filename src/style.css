@@ -1,19 +1,30 @@
 /*
 Theme Name: MinimunTemp
-Theme URI: https://ricti.com.br
+Theme URI: https://christovao.com.br
 Author: Ricardo Christovão (Ricti)
-Author URI: https://ricti.com.br
+Author URI: https://christovao.com.br
 Description: Um tema leve sem CSS adicional, otimizado para Elementor.
-Version: 1.3.1
+Version: 1.3.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: elementor, leve, minimalista
 Text Domain: minimun-temp
 */
 
-/* Estilos mínimos ou nenhum estilo aqui */
-/* Reset CSS para o elemento body */
+/* Adicionar regras para melhor performance */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Melhorar performance de animações */
+.elementor-animation-* {
+    will-change: transform;
+}
+
+/* Otimizar renderização de fontes */
 body {
-    margin: 0!important;
-    padding: 0!important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

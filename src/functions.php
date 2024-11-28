@@ -102,3 +102,44 @@ function remove_specific_inline_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'remove_specific_inline_styles', 100);
+
+// Desabilitar Heartbeat API exceto no admin
+function disable_heartbeat() {
+    if (!is_admin()) {
+        wp_deregister_script('heartbeat');
+    }
+}
+add_action('init', 'disable_heartbeat', 1);
+
+// Limpar cabeçalho WordPress
+function cleanup_header() {
+    remove_action('wp_head', 'wp_generator');
+    remove_action('wp_head', 'wlwmanifest_link');
+    remove_action('wp_head', 'rsd_link');
+    remove_action('wp_head', 'wp_shortlink_wp_head');
+    remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10);
+}
+add_action('init', 'cleanup_header');
+
+// Desabilitar auto-atualizações de embeds
+function disable_embeds() {
+    wp_deregister_script('wp-embed');
+}
+add_action('wp_footer', 'disable_embeds');
+
+// Otimizar carregamento de scripts
+function defer_parsing_of_js($url) {
+    if (is_admin()) return $url;
+    if (strpos($url, '.js') === false) return $url;
+    return "$url' defer ";
+}
+add_filter('clean_url', 'defer_parsing_of_js', 11, 1);
+
+// Adicionar suporte a recursos modernos
+function add_modern_features() {
+    add_theme_support('responsive-embeds');
+    add_theme_support('align-wide');
+    add_theme_support('wp-block-styles');
+    add_theme_support('editor-styles');
+}
+add_action('after_setup_theme', 'add_modern_features');

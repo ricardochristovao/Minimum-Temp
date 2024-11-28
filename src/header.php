@@ -11,5 +11,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo esc_url(home_url('/')); ?>">
     <?php wp_head(); ?>
+    <?php if (is_front_page()): ?>
+    <link rel="preload" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/critical.css" as="style">
+    <?php endif; ?>
 </head>
 <body <?php body_class(); ?>>

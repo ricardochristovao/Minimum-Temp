@@ -1,0 +1,10 @@
+/* critical.css */
+body {
+    margin: 0!important;
+    padding: 0!important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.elementor-section-wrap {
+    display: block;
+}
