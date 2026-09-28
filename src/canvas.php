@@ -1,3 +1,11 @@
+<?php
+/**
+ * Template Name: Elementor Canvas (Minimum Temp)
+ * Template sem header/footer — apenas o conteúdo do Elementor.
+ */
+
+if ( ! defined( 'ABSPATH' ) ) { exit; }
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -8,3 +16,11 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<?php while ( have_posts() ) : the_post(); ?>
+	<?php the_content(); ?>
+<?php endwhile; ?>
+
+<?php wp_footer(); ?>
+</body>
+</html>
